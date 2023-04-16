@@ -1,0 +1,14 @@
+.cards-margin
+{
+    padding: 7px;
+    background-color: black;
+    margin: 0 30px 0 30px;
+}
+.card-text-color
+{
+    color: white;
+}
+body
+{
+    background-color:#2d7b93;
+}
