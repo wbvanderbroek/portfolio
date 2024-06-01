@@ -158,8 +158,7 @@ footer {
 }
 .game-window
 {
-    width: 100%;
-    height: 100%;
+    /* width and height is being done inside of the js */
 }
 
 
