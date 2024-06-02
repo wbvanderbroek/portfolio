@@ -13,6 +13,7 @@
             <a href="index.html" class="brand">Walter van der Broek</a>
         </nav>     
     </header>
+    
 
     <main class="main-content">
       <div class="grid-container">
@@ -27,31 +28,10 @@
                 <a href="https://www.linkedin.com/in/walter-van-der-broek-380768299/"><img src="img/linkedin-app-white-icon.png" alt="LinkedIn"></a>
             </div>
         </div>
-
+        
         <div class="window window-center">
             <div class="top-border">
                 <div class="window-name-selected">Photo</div>
-            </div>
-            <div class="slideshow-container">
-              <div class="mySlides">
-                <img src="img/buildingBlender.png" alt="Building Blender">
-              </div>
-
-              <div class="mySlides">
-                <img src="img/turretBlender.png" alt="Turret Blender">
-              </div>
-
-              <div class="mySlides">
-                <img src="img/turret2Blender.png" alt="Turret 2 Blender">
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-              <!-- <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-              </div> -->
             </div>
         </div>
 
@@ -61,15 +41,9 @@
             </div>
             <div class="about-me">
                 <h1>title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta, quis sed vel blanditiis ex ipsum corrupti itaque praesentium nisi, officia repellendus doloribus nihil delectus quas unde maiores consequuntur hic.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta, quis sed vel blanditiis ex ipsum corrupti itaque praesentium nisi, officia repellendus doloribus nihil delectus quas unde maiores consequuntur hic.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta, quis sed vel blanditiis ex ipsum corrupti itaque praesentium nisi, officia repellendus doloribus nihil delectus quas unde maiores consequuntur hic.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta, quis sed vel blanditiis ex ipsum corrupti itaque praesentium nisi, officia repellendus doloribus nihil delectus quas unde maiores consequuntur hic.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta, quis sed vel blanditiis ex ipsum corrupti itaque praesentium nisi, officia repellendus doloribus nihil delectus quas unde maiores consequuntur hic.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor soluta, quis sed vel blanditiis ex ipsum corrupti itaque praesentium nisi, officia repellendus doloribus nihil delectus quas unde maiores consequuntur hic.</p>
             </div>
         </div>
-
+        
         <div class="window window-bottom">
             <div class="top-border">
                 <div class="window-name-selected">Projects</div>
@@ -82,7 +56,7 @@
                 </div>
                 <div class="project">
                     <a href="TankBuild/TankBuild.html"><img src="img/folder.png" alt="Tank game"></a>
-                    <div class="project-title">Tank game</div>
+                    <div class="project-title">Tank Game</div>
                 </div>
                 <div class="project">
                     <a href="mlagents.html"><img src="img/folder.png" alt="ML Agents"></a>
@@ -106,6 +80,13 @@
                 </div>
             </div>
             <div class="window-bar"></div>
+            <!--
+            Multiplayer projects
+            
+            half unfinished projects
+            rts
+            tower defense
+            -->
         </div>
 
       </div>
@@ -114,34 +95,5 @@
     <footer>
       <br>
     </footer>
-
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-    </script>
   </body>
 </html>
