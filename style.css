@@ -234,7 +234,12 @@ nav {
 
 }
 .mySlides img{
-    width: 100%;
+    max-width: 94%; 
+    object-fit: cover;
+    margin-left: 3%;
+}
+.mySlides {
+
 }
 
 .prev,
