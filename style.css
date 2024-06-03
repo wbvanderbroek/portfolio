@@ -295,3 +295,14 @@ nav {
         font-size: 11px
     }
 }
+#unity-canvas {
+    width: 100%;
+    height: auto; /* Ensure the height is auto to maintain aspect ratio */
+    max-height: 60%; /* Constrain the height to the parent */
+    object-fit: contain; /* Contain the canvas within the parent */
+}
+#unity-loading-bar
+{
+    width: 20%;
+    height: 20%;
+}
