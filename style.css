@@ -124,7 +124,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 50px; /* Add margin to separate from the top border */
+    margin-top: 40px; /* Add margin to separate from the top border */
 }
 .project {
     text-align: center;
@@ -174,7 +174,7 @@ footer {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-/* .window-name-unselected {
+.window-name-unselected {
     width: 150px;
     max-width: calc(100% - 20px);
     height: 30px;
@@ -187,8 +187,11 @@ footer {
     position: relative;
     top: 0;
     left: 0;
-
-} */
+    cursor: not-allowed;  
+    /* Match the border-radius of the parent */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
 .window-bar {
     width: 100%;
@@ -235,6 +238,7 @@ nav {
 }
 .mySlides img{
     max-width: 94%; 
+    height: 100%;
     object-fit: cover;
     margin-left: 3%;
 }
