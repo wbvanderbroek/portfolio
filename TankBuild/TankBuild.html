@@ -36,17 +36,19 @@
           <div class="window-name-unselected">Video showcase</div>
           <div class="window-name-unselected">Photo</div>
         </div>
-        <canvas id="unity-canvas"></canvas>
-        <div id="unity-loading-bar">
-          <div id="unity-logo"></div>
-          <div id="unity-progress-bar-empty">
-            <div id="unity-progress-bar-full"></div>
+        <div id="unity-container" class="unity-desktop" width=100% height=100%>
+          <canvas id="unity-canvas"></canvas>
+          <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+              <div id="unity-progress-bar-full"></div>
+            </div>
           </div>
           <div id="unity-warning"> </div>
           <div id="unity-footer">
             <div id="unity-webgl-logo"></div>
             <div id="unity-fullscreen-button"></div>
-            <div id="unity-build-title">Pong</div>
+            <div id="unity-build-title">RacingGame</div>
           </div>
         </div>
       </div>
@@ -100,25 +102,6 @@
             </div>
         </div>
           <div class="window-bar"></div>
-          <!--
-          first projects >
-              2d platformer     
-              pong
-              tank game
-          
-          Multiplayer projects
-          Ml agents
-          Unreal engine, java, godot, python
-          Hangman
-          
-          Current project
-
-          half unfinished projects
-          rts
-          tower defense
-          
-          mention blender somewhere
-          -->
       </div>
 
     </div>
@@ -195,6 +178,8 @@
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
       }
 

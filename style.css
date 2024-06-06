@@ -295,14 +295,21 @@ nav {
         font-size: 11px
     }
 }
+#unity-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #unity-canvas {
     width: 100%;
-    height: auto; /* Ensure the height is auto to maintain aspect ratio */
-    max-height: 60%; /* Constrain the height to the parent */
-    object-fit: contain; /* Contain the canvas within the parent */
+    height: 100%;
 }
-#unity-loading-bar
-{
+
+#unity-loading-bar {
     width: 20%;
     height: 20%;
 }
