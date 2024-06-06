@@ -284,7 +284,14 @@ nav {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
+.slideshow-dots {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
 .dot {
     cursor: pointer;
     height: 15px;
