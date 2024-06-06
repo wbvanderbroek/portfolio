@@ -234,16 +234,21 @@ nav {
 /* Slideshow */
 
 .slideshow-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .mySlides img{
-    max-width: 94%; 
     height: 100%;
-    object-fit: cover;
-    margin-left: 3%;
+    width: 100%;
 }
 .mySlides {
-
+    height: 100%;
+    width: 100%s;
 }
 
 .prev,
