@@ -198,7 +198,7 @@ footer {
 }
 .unicode-character {
     font-size: 1.5em; /* Adjust the size as needed */
-    margin-right: 10px;
+    
 }
 .window-bar {
     width: 100%;
@@ -342,5 +342,6 @@ nav {
     height: 20%;
 }
 .unity-desktop{
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
