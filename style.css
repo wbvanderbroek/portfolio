@@ -169,6 +169,8 @@ footer {
     border-style: solid;
     padding-left: 25px;
     border-width: thin;
+    border-right-width: 0px;
+    border-left-width: 0px;
 }
 .info{
     padding-top: 10px;
