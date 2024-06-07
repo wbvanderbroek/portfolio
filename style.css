@@ -160,7 +160,7 @@ footer {
     position: relative;
     border-color: #1A1A1A;
     border-style: solid;
-    padding-left: 25px;
+    padding-left: 45px;
     border-width: thin;
     border-right-width: 0px;
     border-left-width: 0px;
@@ -198,7 +198,12 @@ footer {
 }
 .unicode-character {
     font-size: 1.5em; /* Adjust the size as needed */
-    
+    position: absolute;
+    top: 50%; /* Aligns with the center vertically */
+    transform: translateY(-50%);
+    padding: 0px 10px 0px 15px;
+    left: 0; /* Positions to the left */
+
 }
 .window-bar {
     width: 100%;
