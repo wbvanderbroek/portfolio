@@ -107,10 +107,9 @@ footer {
 .projects img {
     display: block;
     margin-top: 15px; 
-    width: 150px;
+    width: 100%;
     /* max-width: calc(100% - 25px); */
     object-fit: cover;
-    padding: 10px;
 }
 .projects{
     display: flex;
@@ -121,13 +120,19 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 40px; /* Add margin to separate from the top border */
-    max-width: calc(100%);
+    margin-top: 50px; /* Add margin to separate from the top border */
+    max-width: 100%;
+    padding-left: 10px;
+    
 
 }
 .project {
     text-align: center;
-    max-width: calc(50%);
+    width: 150px;
+    max-width: calc(25%);
+    padding: 0px 10px 0px 10px;
+    font-size:1.2vw;
+    
 
 }
 .top-border {
@@ -339,6 +344,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 #unity-canvas {
