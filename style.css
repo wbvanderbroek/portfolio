@@ -129,6 +129,8 @@ footer {
 .project {
     text-align: center;
     margin: 3px;
+    max-width: calc(60% - 25px);
+
 }
 .top-border {
     width: 100%;
