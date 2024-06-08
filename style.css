@@ -188,7 +188,7 @@ footer {
 }
 .window-name{
     width: 150px;
-    max-width: calc(100% - 20px);
+    max-width: 100%;
     /* Set the maximum width to 100% of the parent width minus 20px (10px padding on each side) */
     height: 30px;
     color: white;
@@ -201,17 +201,22 @@ footer {
     /* Match the border-radius of the parent */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-size: 1vmax;
+    font-size: 1.8vmin;  
 }
-.unicode-container, .text-container, .spacer {
+.unicode-container,
+.text-container,
+.spacer {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .unicode-character {
-    font-size: 1.8em;
+}
+
+.unicode-character {
     width: 33%;
+    font-size: 1.2em;
+    justify-content: right;
+
 }
 .window-name-selected {
     background-color: #3C3C3C;
