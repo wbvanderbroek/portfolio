@@ -182,7 +182,7 @@ footer {
     padding: 10px 10px 0px 10px;
     background-color: #383838;
     position: relative;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .window-name{
     width: 150px;
