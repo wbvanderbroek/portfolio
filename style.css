@@ -179,6 +179,7 @@ footer {
     border-width: thin;
     border-right-width: 0px;
     border-left-width: 0px;
+    font-size: 1.25vmax;
 }
 .info{
     padding: 10px 10px 0px 10px;
@@ -201,7 +202,7 @@ footer {
     /* Match the border-radius of the parent */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    font-size: 1.8vmin;  
+    font-size: 1vmax;  
 }
 .unicode-container,
 .text-container,
