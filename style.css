@@ -173,7 +173,7 @@ footer {
     position: relative;
     border-color: #1A1A1A;
     border-style: solid;
-    padding-left: 10%;
+    padding-left: 2%;
     border-width: thin;
     border-right-width: 0px;
     border-left-width: 0px;
@@ -183,6 +183,7 @@ footer {
     background-color: #383838;
     padding-left: 10px;
     position: relative;
+    font-size: 1vw;
 }
 .window-name{
     width: 150px;
