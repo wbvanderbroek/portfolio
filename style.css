@@ -106,7 +106,6 @@ footer {
 }
 .projects img {
     display: block;
-    margin-left: 15px ;
     margin-top: 15px; 
     width: 150px;
     /* max-width: calc(100% - 25px); */
@@ -117,19 +116,18 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Allow wrapping to multiple lines */
-    justify-content: space-between; /* Adjust spacing between projects */
+    justify-content:flex-start; /* Adjust spacing between projects */
     align-items: flex-start;
     position: absolute;
     top: 0;
     left: 0;
     margin-top: 40px; /* Add margin to separate from the top border */
-    max-width: calc(100% - 25px);
+    max-width: calc(100%);
 
 }
 .project {
     text-align: center;
-    margin: 3px;
-    max-width: calc(60% - 25px);
+    max-width: calc(50%);
 
 }
 .top-border {
