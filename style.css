@@ -201,22 +201,24 @@ footer {
     /* Match the border-radius of the parent */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-size: 1vmax;
 }
-
+.unicode-container, .text-container, .spacer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .unicode-character {
+    font-size: 1.8em;
+    width: 33%;
+}
 .window-name-selected {
     background-color: #3C3C3C;
 }
 .window-name-unselected {
     background-color: #292929;
     cursor: not-allowed;  
-}
-.unicode-character {
-    font-size:20px;
-    /* position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
-    padding: 0px 10px 0px 15px;
-    left: 0;  */
 }
 .window-bar {
     width: 100%;
