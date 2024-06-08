@@ -88,7 +88,6 @@ footer {
 }
 .social-links img {
     display: block;
-    margin-top: 15px; 
     width: 100%;
     /* max-width: calc(100% - 25px); */
     object-fit: cover;
@@ -107,10 +106,13 @@ footer {
     padding-left: 10%;
 }
 .social-link{
+    margin-top: 15px; 
     text-align: center;
     max-height: 15%;
     width: 45%;
     padding: 2.5%;
+    font-size: 1vmin;
+    word-wrap:break-word;
 }
 .projects img {
     display: block;
