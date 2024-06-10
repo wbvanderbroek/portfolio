@@ -163,7 +163,7 @@ footer {
 }
 @media all and (min-width:300px) and (max-width: 500px) {
     .project {
-        max-width: calc(100% / 7);
+        max-width: calc(25%);
     }
 }
 
