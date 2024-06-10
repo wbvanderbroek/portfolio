@@ -161,11 +161,6 @@ footer {
         max-width: calc(100% / 6);
     }
 }
-@media all and (min-width:300px) and (max-width: 500px) {
-    .project {
-        max-width: calc(100% / 5);
-    }
-}
 
 .top-border {
     width: 100%;
