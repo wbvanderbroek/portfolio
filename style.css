@@ -432,3 +432,8 @@ nav {
     margin-top: 30px;
     padding-bottom: 30px;
 }
+.mobile-device-warning{
+    margin: 10px;
+    font-size: 2vmin;
+    text-decoration: underline;
+}

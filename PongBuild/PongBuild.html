@@ -93,6 +93,7 @@
               <p>The size of the player is dependent on the score of the player.</p>
             </div>
           </div>
+          <div class="mobile-device-warning">please visit the site on a bigger device to see more</div>
       </div>
       
       <div class="window window-bottom">
@@ -134,25 +135,6 @@
             </div>
         </div>
           <div class="window-bar"></div>
-          <!--
-          first projects >
-              2d platformer     
-              pong
-              tank game
-          
-          Multiplayer projects
-          Ml agents
-          Unreal engine, java, godot, python
-          Hangman
-          
-          Current project
-
-          half unfinished projects
-          rts
-          tower defense
-          
-          mention blender somewhere
-          -->
       </div>
 
     </div>
@@ -164,10 +146,17 @@
 
   <script>
     var center = document.querySelector(".window-center");
+    var mobileDevice = document.querySelector(".mobile-device-warning");
     if (window.outerWidth < 800)
     {          
       center.style.display = "none";
+      mobileDevice.style.display = "block";
     }
+    else
+    {
+      mobileDevice.style.display = "none";
+    }
+
   </script>
     <script>
       var container = document.querySelector("#unity-container");
