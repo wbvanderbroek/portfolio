@@ -249,6 +249,9 @@ footer {
     font-size: 2vmin;
     text-decoration: underline;
 }
+.info a{
+    color:white;
+}
 
 /*#endregion right-tab*/
 
