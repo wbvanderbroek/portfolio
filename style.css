@@ -248,6 +248,7 @@ footer {
     margin: 10px;
     font-size: 2vmin;
     text-decoration: underline;
+    display: none;
 }
 .info a{
     color:white;
