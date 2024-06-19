@@ -145,10 +145,17 @@ footer {
     font-size: 1vmin;
     word-wrap: break-word;
 }
+.social-link i{
+    font-size: 2vmax;
+    color: white;
+}
+.social-link a{
+    color: white;
+}
 
 @media all and (max-width: 800px) {
     .social-link {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
