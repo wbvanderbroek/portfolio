@@ -13,11 +13,11 @@ class ProjectWindow extends HTMLElement
 
     <div class="projects">
       <div class="project">
-        <a href="PongBuild/PongBuild.html"><img src="img/folder.png" alt="Pong"></a>
+        <a href="pong.html"><img src="img/folder.png" alt="Pong"></a>
         <div class="project-title">Pong</div>
       </div>
       <div class="project">
-        <a href="TankBuild/TankBuild.html"><img src="img/folder.png" alt="Tank Wars"></a>
+        <a href="tank.html"><img src="img/folder.png" alt="Tank Wars"></a>
         <div class="project-title">Tank Wars</div>
       </div>
       <div class="project">
