@@ -89,7 +89,79 @@ class TopBarWindowRight extends HTMLElement
   `
   }
 }
+class TopBarSelectedGame extends HTMLElement
+{
+  connectedCallback()
+    {
+    this.innerHTML = `
+    <div class="window-name window-name-selected">
+      <div class="unicode-container unicode-character">&#127918;</div>
+      <div class="text-container">Game</div>
+      <div class="spacer"></div>
+    </div>
+    <div class="window-name window-name-unselected">
+      <div class="unicode-container unicode-character">&#x1F4F9;</div>
+      <div class="text-container">Video</div>
+      <div class="spacer"></div>
+    </div>
+    <div class="window-name window-name-unselected">
+      <div class="unicode-container unicode-character">&#128247;</div>
+      <div class="text-container">Photo</div>
+      <div class="spacer"></div>
+    </div>
+  `
+  }
+}
+class TopBarSelectedVideo extends HTMLElement
+{
+  connectedCallback()
+    {
+    this.innerHTML = `
+      <div class="window-name window-name-unselected">
+        <div class="unicode-container unicode-character">&#127918;</div>
+        <div class="text-container">Game</div>
+        <div class="spacer"></div>
+      </div>
+      <div class="window-name window-name-selected">
+        <div class="unicode-container unicode-character">&#x1F4F9;</div>
+        <div class="text-container">Video</div>
+        <div class="spacer"></div>
+      </div>
+      <div class="window-name window-name-unselected">
+        <div class="unicode-container unicode-character">&#128247;</div>
+        <div class="text-container">Photo</div>
+        <div class="spacer"></div>
+      </div>
+  `
+  }
+}
+class TopBarSelectedPhoto extends HTMLElement
+{
+  connectedCallback()
+    {
+    this.innerHTML = `
+    <div class="window-name window-name-unselected">
+      <div class="unicode-container unicode-character">&#127918;</div>
+      <div class="text-container">Game</div>
+      <div class="spacer"></div>
+    </div>
+    <div class="window-name window-name-unselected">
+      <div class="unicode-container unicode-character">&#x1F4F9;</div>
+      <div class="text-container">Video</div>
+      <div class="spacer"></div>
+    </div>
+    <div class="window-name window-name-selected">
+      <div class="unicode-container unicode-character">&#128247;</div>
+      <div class="text-container">Photo</div>
+      <div class="spacer"></div>
+    </div>
+  `
+  }
+}
 
 customElements.define('project-window', ProjectWindow);
 customElements.define('social-window', SocialWindow);
 customElements.define('top-bar-window-right', TopBarWindowRight);
+customElements.define('top-bar-selected-game', TopBarSelectedGame);
+customElements.define('top-bar-selected-video', TopBarSelectedVideo);
+customElements.define('top-bar-selected-photo', TopBarSelectedPhoto);
