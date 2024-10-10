@@ -162,9 +162,22 @@ class TopBarSelectedPhoto extends HTMLElement
   }
 }
 
+class CustomHeader extends HTMLElement
+{
+  connectedCallback()
+    {
+    this.innerHTML = `
+    <nav>
+      <a href="index.html" class="brand">Walter van der Broek</a>
+    </nav> 
+  `
+  }
+}
+
 customElements.define('project-window', ProjectWindow);
 customElements.define('social-window', SocialWindow);
 customElements.define('top-bar-window-right', TopBarWindowRight);
 customElements.define('top-bar-selected-game', TopBarSelectedGame);
 customElements.define('top-bar-selected-video', TopBarSelectedVideo);
 customElements.define('top-bar-selected-photo', TopBarSelectedPhoto);
+customElements.define('custom-header', CustomHeader);
