@@ -89,6 +89,7 @@ class TopBarWindowRight extends HTMLElement
   `
   }
 }
+
 class TopBarSelectedGame extends HTMLElement
 {
   connectedCallback()
@@ -112,6 +113,7 @@ class TopBarSelectedGame extends HTMLElement
   `
   }
 }
+
 class TopBarSelectedVideo extends HTMLElement
 {
   connectedCallback()
@@ -135,6 +137,7 @@ class TopBarSelectedVideo extends HTMLElement
   `
   }
 }
+
 class TopBarSelectedPhoto extends HTMLElement
 {
   connectedCallback()
