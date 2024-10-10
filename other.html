@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="/js/components.js"></script>
+
   </head>
   <body>
     <header>
@@ -63,7 +64,7 @@
                     Thats why I made a Discord bot using python. 
                   </p>
                   <p>
-                    It would send status updates about all the servers and you could send commands to the server like stopping or starting the servers, dino wiping or broadcasts. 
+                    It would send status updates about all the servers and you could send commands to the server like stopping or starting the servers, dino wiping or broadcasts.
                   </p>
                 </div>
               </div>
@@ -78,34 +79,6 @@
     <footer>
       <br>
     </footer>
-    
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-    </script>
+    <script src="/js/slideshow.js"></script>
   </body>
 </html>
