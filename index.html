@@ -18,9 +18,20 @@
         <social-window class="window window-left"></social-window>
         
         <div class="window window-center">
-          <top-bar-selected-game class="top-border"></top-bar-selected-game>
-
-            <div class="no-project">No project selected</div>
+          <div id="selectedGameSection" class="no-project" >
+            <top-bar-selected-game class="top-border"></top-bar-selected-game>
+            game view selected
+          </div>
+          
+          <div id="selectedVideoSection" style="display:none;">
+            <top-bar-selected-video class="top-border"></top-bar-selected-video>
+            video view selected
+          </div>
+          
+          <div id="selectedPhotoSection" style="display:none;">
+            <top-bar-selected-photo class="top-border"></top-bar-selected-photo>
+            photo view selected
+          </div>
         </div>
 
         <div class="window window-right">
@@ -47,5 +58,6 @@
     <footer>
       <br>
     </footer>
+    <script src="/js/viewselector.js"></script>
   </body>
 </html>

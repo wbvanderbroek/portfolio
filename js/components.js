@@ -95,17 +95,17 @@ class TopBarSelectedGame extends HTMLElement
   connectedCallback()
     {
     this.innerHTML = `
-    <div class="window-name window-name-selected">
+    <div id="game-view" class="window-name window-name-selected">
       <div class="unicode-container unicode-character">&#127918;</div>
       <div class="text-container">Game</div>
       <div class="spacer"></div>
     </div>
-    <div class="window-name window-name-unselected">
+    <div id="video-view" class="window-name window-name-unselected">
       <div class="unicode-container unicode-character">&#x1F4F9;</div>
       <div class="text-container">Video</div>
       <div class="spacer"></div>
     </div>
-    <div class="window-name window-name-unselected">
+    <div id="photo-view" class="window-name window-name-unselected">
       <div class="unicode-container unicode-character">&#128247;</div>
       <div class="text-container">Photo</div>
       <div class="spacer"></div>
@@ -119,17 +119,17 @@ class TopBarSelectedVideo extends HTMLElement
   connectedCallback()
     {
     this.innerHTML = `
-      <div class="window-name window-name-unselected">
+      <div id="game-view" class="window-name window-name-unselected">
         <div class="unicode-container unicode-character">&#127918;</div>
         <div class="text-container">Game</div>
         <div class="spacer"></div>
       </div>
-      <div class="window-name window-name-selected">
+      <div id="video-view" id="video-view" class="window-name window-name-selected">
         <div class="unicode-container unicode-character">&#x1F4F9;</div>
         <div class="text-container">Video</div>
         <div class="spacer"></div>
       </div>
-      <div class="window-name window-name-unselected">
+      <div id="photo-view" class="window-name window-name-unselected">
         <div class="unicode-container unicode-character">&#128247;</div>
         <div class="text-container">Photo</div>
         <div class="spacer"></div>
@@ -143,17 +143,17 @@ class TopBarSelectedPhoto extends HTMLElement
   connectedCallback()
     {
     this.innerHTML = `
-    <div class="window-name window-name-unselected">
+    <div id="game-view" class="window-name window-name-unselected">
       <div class="unicode-container unicode-character">&#127918;</div>
       <div class="text-container">Game</div>
       <div class="spacer"></div>
     </div>
-    <div class="window-name window-name-unselected">
+    <div id="video-view" class="window-name window-name-unselected">
       <div class="unicode-container unicode-character">&#x1F4F9;</div>
       <div class="text-container">Video</div>
       <div class="spacer"></div>
     </div>
-    <div class="window-name window-name-selected">
+    <div id="photo-view" class="window-name window-name-selected">
       <div class="unicode-container unicode-character">&#128247;</div>
       <div class="text-container">Photo</div>
       <div class="spacer"></div>

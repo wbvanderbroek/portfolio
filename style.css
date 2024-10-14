@@ -285,6 +285,7 @@ footer {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-size: 1vmax;
+    cursor: pointer;
 }
 
 .top-border {
@@ -325,7 +326,6 @@ footer {
 
 .window-name-unselected {
     background-color: #292929;
-    cursor: not-allowed;
 }
 
 /*#endregion window-names*/
