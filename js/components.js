@@ -67,7 +67,7 @@ class SocialWindow extends HTMLElement
       <div class="social-link">
         <a target="_blank" href="https://www.linkedin.com/in/walter-van-der-broek/"><img src="img/linkedin-app-white-icon.png" alt="Image Description"></a>
       </div>
-      <div class="social-link">Email: waltervanderbroek@gmail.com</div>
+      <div class="social-link"><a href="mailto:waltervanderbroek+portfolio@gmail.com">Send email</a></div>
       <div class="social-link">Tel: 06 23344404</div>
       <div class="social-link"><a href="cv/cv-nl.pdf"><i class="fa-regular fa-file"></i></i> <br>CV NL</a></div>
       <div class="social-link"><a href="cv/cv-eng.pdf"><i class="fa-regular fa-file"></i></i> <br>CV ENG</a></div>
