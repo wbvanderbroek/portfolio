@@ -61,18 +61,14 @@ class SocialWindow extends HTMLElement
       </div>
     </div>
     <div class="social-links">
-      <div class="social-link">
-        <a target="_blank" href="https://github.com/wbvanderbroek"><img src="img/github-mark-white.png" alt="Image Description"></a>
-      </div>
-      <div class="social-link">
-        <a target="_blank" href="https://www.linkedin.com/in/walter-van-der-broek/"><img src="img/linkedin-app-white-icon.png" alt="Image Description"></a>
-      </div>
+      <div class="social-link"> <a target="_blank" href="https://github.com/wbvanderbroek"><img src="img/github-mark-white.png" alt="Github"></a></div>
+      <div class="social-link"><a target="_blank" href="https://www.linkedin.com/in/walter-van-der-broek/"><img src="img/linkedin-app-white-icon.png" alt="LinkedIn"></a></div>
+
       <div class="social-link"><a href="mailto:waltervanderbroek+portfolio@gmail.com">Send email</a></div>
-      <div class="social-link">Tel: 06 23344404</div>
-      <div class="social-link"><a href="cv/cv-nl.pdf"><i class="fa-regular fa-file"></i></i> <br>CV NL</a></div>
-      <div class="social-link"><a href="cv/cv-eng.pdf"><i class="fa-regular fa-file"></i></i> <br>CV ENG</a></div>
     </div>
-  `
+    `
+  // <div class="social-link"><a href="cv/cv-nl.pdf"><i class="fa-regular fa-file"></i></i> <br>CV NL</a></div>
+  // <div class="social-link"><a href="cv/cv-eng.pdf"><i class="fa-regular fa-file"></i></i> <br>CV ENG</a></div>
   }
 }
 
@@ -119,21 +115,21 @@ class TopBarSelectedVideo extends HTMLElement
   connectedCallback()
     {
     this.innerHTML = `
-      <div class="window-name window-name-unselected">
-        <div class="unicode-container unicode-character">&#127918;</div>
-        <div class="text-container">Game</div>
-        <div class="spacer"></div>
-      </div>
-      <div class="window-name window-name-selected">
-        <div class="unicode-container unicode-character">&#x1F4F9;</div>
-        <div class="text-container">Video</div>
-        <div class="spacer"></div>
-      </div>
-      <div class="window-name window-name-unselected">
-        <div class="unicode-container unicode-character">&#128247;</div>
-        <div class="text-container">Photo</div>
-        <div class="spacer"></div>
-      </div>
+    <div class="window-name window-name-unselected">
+      <div class="unicode-container unicode-character">&#127918;</div>
+      <div class="text-container">Game</div>
+      <div class="spacer"></div>
+    </div>
+    <div class="window-name window-name-selected">
+      <div class="unicode-container unicode-character">&#x1F4F9;</div>
+      <div class="text-container">Video</div>
+      <div class="spacer"></div>
+    </div>
+    <div class="window-name window-name-unselected">
+      <div class="unicode-container unicode-character">&#128247;</div>
+      <div class="text-container">Photo</div>
+      <div class="spacer"></div>
+    </div>
   `
   }
 }
@@ -174,6 +170,25 @@ class CustomHeader extends HTMLElement
   }
 }
 
+class MetaSEO extends HTMLElement{
+  connectedCallback()
+  {
+  this.innerHTML = `
+  <meta name="keywords" content="
+    Programming, Programmer, C#, Java, HTML, CSS, JS, JavaScript, Python, 
+    Developer, Software, Software Developer, Unity, Game Developer, Game development, 
+    Blender, 3D Modeling, Unity3D, 
+    Game, Game Engine, Game Design, 
+    Git, GitHub, Android Studio, Visual Studio, 
+    Meta Quest, XR, AR, VR, 
+    Bluetooth, Multiplayer, Multiplayer Games, 
+    Intership, Intern">
+  <meta name="author" content="Walter van der Broek">
+  `
+  }
+}
+
+
 customElements.define('project-window', ProjectWindow);
 customElements.define('social-window', SocialWindow);
 customElements.define('top-bar-window-right', TopBarWindowRight);
@@ -181,3 +196,4 @@ customElements.define('top-bar-selected-game', TopBarSelectedGame);
 customElements.define('top-bar-selected-video', TopBarSelectedVideo);
 customElements.define('top-bar-selected-photo', TopBarSelectedPhoto);
 customElements.define('custom-header', CustomHeader);
+customElements.define('meta-seo', MetaSEO);

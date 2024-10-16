@@ -134,6 +134,7 @@ footer {
     max-height: 100%;
     margin-top: 30px;
     padding-left: 10%;
+    justify-content: space-around;
 }
 
 .social-link {
@@ -174,7 +175,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex;
     position: absolute;
     top: 0;
     left: 0;
