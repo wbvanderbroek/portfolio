@@ -170,25 +170,6 @@ class CustomHeader extends HTMLElement
   }
 }
 
-class MetaSEO extends HTMLElement{
-  connectedCallback()
-  {
-  this.innerHTML = `
-  <meta name="keywords" content="
-    Programming, Programmer, C#, Java, HTML, CSS, JS, JavaScript, Python, 
-    Developer, Software, Software Developer, Unity, Game Developer, Game development, 
-    Blender, 3D Modeling, Unity3D, 
-    Game, Game Engine, Game Design, 
-    Git, GitHub, Android Studio, Visual Studio, 
-    Meta Quest, XR, AR, VR, 
-    Bluetooth, Multiplayer, Multiplayer Games, 
-    Intership, Intern">
-  <meta name="author" content="Walter van der Broek">
-  `
-  }
-}
-
-
 customElements.define('project-window', ProjectWindow);
 customElements.define('social-window', SocialWindow);
 customElements.define('top-bar-window-right', TopBarWindowRight);
@@ -196,4 +177,3 @@ customElements.define('top-bar-selected-game', TopBarSelectedGame);
 customElements.define('top-bar-selected-video', TopBarSelectedVideo);
 customElements.define('top-bar-selected-photo', TopBarSelectedPhoto);
 customElements.define('custom-header', CustomHeader);
-customElements.define('meta-seo', MetaSEO);
