@@ -7,8 +7,38 @@ function addMetaTags() {
     metaAuthor.name = "author";
     metaAuthor.content = "Walter van der Broek";
 
+    // Open Graph Title
+    const ogTitle = document.createElement('meta');
+    ogTitle.setAttribute('property', 'og:title');
+    ogTitle.content = "Walter van der Broek - Software Developer Portfolio";
+
+    // Open Graph Description
+    const ogDescription = document.createElement('meta');
+    ogDescription.setAttribute('property', 'og:description');
+    ogDescription.content = "Portfolio of Walter van der Broek, a passionate software developer specializing in game development, Unity and C#.";
+
+    // Open Graph Image
+    const ogImage = document.createElement('meta');
+    ogImage.setAttribute('property', 'og:image');
+    ogImage.content = "./img/walter.jpg";
+
+    // Open Graph URL
+    const ogURL = document.createElement('meta');
+    ogURL.setAttribute('property', 'og:url');
+    ogURL.content = "https://waltervanderbroek.nl";
+
+    // Open Graph Type
+    const ogType = document.createElement('meta');
+    ogType.setAttribute('property', 'og:type');
+    ogType.content = "website";
+
+
     document.head.appendChild(metaKeywords);
     document.head.appendChild(metaAuthor);
-  }
+    document.head.appendChild(ogTitle);
+    document.head.appendChild(ogDescription);
+    document.head.appendChild(ogImage);
+    document.head.appendChild(ogURL);
+    document.head.appendChild(ogType);  }
 
   window.addEventListener('DOMContentLoaded', addMetaTags);
