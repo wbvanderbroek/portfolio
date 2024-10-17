@@ -20,7 +20,7 @@ function addMetaTags() {
     // Open Graph Image
     const ogImage = document.createElement('meta');
     ogImage.setAttribute('property', 'og:image');
-    ogImage.content = "./img/walter.jpg";
+    ogImage.content = "./img/mountainss.png";
 
     // Open Graph URL
     const ogURL = document.createElement('meta');
