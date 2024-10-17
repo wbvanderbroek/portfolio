@@ -22,11 +22,6 @@ function addMetaTags() {
     ogImage.setAttribute('property', 'og:image');
     ogImage.content = "./img/mountainss.png";
 
-    // Open Graph URL
-    const ogURL = document.createElement('meta');
-    ogURL.setAttribute('property', 'og:url');
-    ogURL.content = "https://waltervanderbroek.nl";
-
     // Open Graph Type
     const ogType = document.createElement('meta');
     ogType.setAttribute('property', 'og:type');
@@ -38,7 +33,6 @@ function addMetaTags() {
     document.head.appendChild(ogTitle);
     document.head.appendChild(ogDescription);
     document.head.appendChild(ogImage);
-    document.head.appendChild(ogURL);
     document.head.appendChild(ogType);  }
 
   window.addEventListener('DOMContentLoaded', addMetaTags);
