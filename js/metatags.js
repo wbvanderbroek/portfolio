@@ -7,6 +7,11 @@ function addMetaTags() {
     metaAuthor.name = "author";
     metaAuthor.content = "Walter van der Broek";
 
+    const favIcon = document.createElement('link');
+    favIcon.setAttribute('rel', 'icon');
+    favIcon.type = "image/png";
+    favIcon.href = "./img/favicon.png"
+
     // Open Graph Title
     const ogTitle = document.createElement('meta');
     ogTitle.setAttribute('property', 'og:title');
@@ -30,9 +35,12 @@ function addMetaTags() {
 
     document.head.appendChild(metaKeywords);
     document.head.appendChild(metaAuthor);
+    document.head.appendChild(favIcon);
+
     document.head.appendChild(ogTitle);
     document.head.appendChild(ogDescription);
     document.head.appendChild(ogImage);
-    document.head.appendChild(ogType);  }
+    document.head.appendChild(ogType); 
+  }
 
   window.addEventListener('DOMContentLoaded', addMetaTags);
